@@ -12,7 +12,16 @@
 <body>
 	<div class="container">
 		<%@include file="navbar.jsp"%>
-		<h1>This is NoteTaker Home page</h1>
+		<div class="card my-5 p-5">
+			<img alt="This is NoteTaker LOGO" src="img/noteIcon.jpg"
+				class="img-fluid mx-auto" style="max-width: 400px">
+			<h1 class="text-primary text-uppercase text-center mt-3">Start
+				Taking your Notes now!</h1>
+			<div class="container text-center">
+				<button class="btn btn-outline-primary text-center" onclick="location.href ='add_notes.jsp'">Start
+					Here</button>
+			</div>
+		</div>
 	</div>
 
 
