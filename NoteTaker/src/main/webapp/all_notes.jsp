@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@page import="com.entity.Note"%>
 <%@page import="java.util.List"%>
@@ -36,9 +37,12 @@
 					<div class="card-body">
 						<h5 class="card-title"><%=note.getTitle()%></h5>
 						<p class="card-text"><%=note.getContent()%></p>
+						<kbd><%=new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z").format(note.getAddedDate())%></kbd>
 						<div class="container text-center">
-							<a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete Note</a> 
-							<a href="edit.jsp?note_id=<%= note.getId() %>" class="btn btn-primary">Edit Note</a>
+							<a href="DeleteServlet?note_id=<%=note.getId()%>"
+								class="btn btn-danger">Delete Note</a> <a
+								href="edit.jsp?note_id=<%=note.getId()%>"
+								class="btn btn-primary">Edit Note</a>
 						</div>
 					</div>
 				</div>
