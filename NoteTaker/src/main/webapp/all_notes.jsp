@@ -38,7 +38,7 @@
 						<p class="card-text"><%=note.getContent()%></p>
 						<div class="container text-center">
 							<a href="DeleteServlet?note_id=<%= note.getId() %>" class="btn btn-danger">Delete Note</a> 
-							<a href="#" class="btn btn-primary">Edit Note</a>
+							<a href="edit.jsp?note_id=<%= note.getId() %>" class="btn btn-primary">Edit Note</a>
 						</div>
 					</div>
 				</div>
