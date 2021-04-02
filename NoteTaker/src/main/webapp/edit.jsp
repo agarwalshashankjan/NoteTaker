@@ -25,6 +25,7 @@
 
 		<form action="UpdateNoteServlet" method="post">
 			<div class="mb-3">
+			<input name="note_id" value="<%=noteId %>" type="hidden" />
 				<label for="title" class="form-label">Note title</label> <input
 					name="title" required="required" type="text" class="form-control"
 					id="title" aria-describedby="emailHelp"
