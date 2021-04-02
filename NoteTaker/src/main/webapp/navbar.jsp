@@ -15,9 +15,9 @@
 					tabindex="-1">Show Notes</a></li>
 			</ul>
 			<form class="d-flex">
-				<input class="form-control me-2" type="search" placeholder="Search"
+				<input class="form-control me-2" type="search" placeholder="Search" disabled="disabled"
 					aria-label="Search">
-				<button class="btn btn-outline-light" type="submit">Search</button>
+				<button class="btn btn-outline-light" type="submit" disabled="disabled">Search</button>
 			</form>
 		</div>
 	</div>
