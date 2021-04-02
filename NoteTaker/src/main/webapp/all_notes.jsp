@@ -31,11 +31,15 @@
 				%>
 
 				<div class="card mt-3">
-				<img src="img/noteIcon.jpg" style="max-width: 50px" class="card-img-top m-2" alt="This is NoteIcon">
+					<img src="img/noteIcon.jpg" style="max-width: 50px"
+						class="card-img-top m-2" alt="This is NoteIcon">
 					<div class="card-body">
-						<h5 class="card-title"><%=note.getTitle() %></h5>
-						<p class="card-text"><%= note.getContent() %></p>
-						<a href="#" class="btn btn-danger">Delete Note</a>
+						<h5 class="card-title"><%=note.getTitle()%></h5>
+						<p class="card-text"><%=note.getContent()%></p>
+						<div class="container text-center">
+							<a href="#" class="btn btn-danger">Delete Note</a> 
+							<a href="#" class="btn btn-primary">Edit Note</a>
+						</div>
 					</div>
 				</div>
 
